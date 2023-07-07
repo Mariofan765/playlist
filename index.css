@@ -1,0 +1,144 @@
+@keyframes titleOut {
+    0% {
+        opacity: 1;
+        color: white;
+    }
+    25% {
+        opacity: 1;
+        color: #5d1787;
+    }
+    50% {
+        opacity: 0.75;
+        color: #CE71CB;
+    }
+    75% {
+        opacity: 0.5;
+        color: white;
+
+    }
+    90% {
+        opacity: 0;
+        width: 400px;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+        width: 0;
+        display: none;
+        z-index: -100;
+        cursor: none;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-shadow: inset 0px 0px 194px 0px #5d1787;
+}
+body {
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 1280px;
+    border: 1px solid green;
+    background-image: url("I3uXP.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    min-height: 7%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header__title {
+    position: fixed;
+    font-size: 6.2rem;
+    width: 400px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0 0 -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: titleOut 5s forwards;
+}
+.header__menu {
+    display: flex;
+}
+.header__menu-btn {
+    color: white;
+    font-size: 1em;
+    width: 165px;
+    height: 45px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.header__menu-btn:hover {
+    border: 1px solid white;
+    padding: 5px;
+    box-shadow: inset 0px 0px 25px 0px #5d1787;
+}
+.header__menu-btn_active {
+    background: #CE71CB;
+    border-bottom: 1px solid white;
+}
+.header__lang {
+    display: flex;
+}
+.header__lang-btn {
+    color: white;
+    width: 45px;
+    height: 45px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.header__lang-btn:hover {
+    background: #CE71CB;
+    border-bottom: 1px solid white;
+}
+.header__lang-btn_active {
+    background: #CE71CB;
+    border-bottom: 1px solid white;
+}
+
+.main {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+    width: 40%;
+    margin: 10% 0 0 0;
+    height: 640px;
+
+    font-size: 2rem;
+}
+.playlist__item {
+    display: flex;
+    border: 1px solid red;
+    width: 70%;
+    height: 55%;
+    margin: 5%;
+}
+.playlist__timeLine-btn {
+    margin: 25px 0 0 0 ;
+    width: 35px;
+    height: 35px;
+}
