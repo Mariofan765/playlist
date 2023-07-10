@@ -42,7 +42,6 @@ html {
 body {
     margin: 0 auto;
     max-width: 1280px;
-    border: 1px solid green;
     background-image: url("I3uXP.gif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -154,6 +153,11 @@ body {
 .popup {
     height: 400px;
     width: 400px;
+    top: 25%;
+    left: 50%;
     position: fixed;
     display: flex;
+}
+.popup__close {
+
 }
