@@ -33,12 +33,14 @@
     margin: 0;
     padding: 0;
 }
+.active-btn {
+     background: #CE71CB !important;
+ }
 html {
     box-shadow: inset 0px 0px 194px 0px #5d1787;
 }
 body {
     margin: 0 auto;
-    height: 100vh;
     max-width: 1280px;
     border: 1px solid green;
     background-image: url("I3uXP.gif");
@@ -83,13 +85,8 @@ body {
     transition: all 0.2s ease-in-out;
 }
 .header__menu-btn:hover {
-    border: 1px solid white;
     padding: 5px;
     box-shadow: inset 0px 0px 25px 0px #5d1787;
-}
-.header__menu-btn_active {
-    background: #CE71CB;
-    border-bottom: 1px solid white;
 }
 .header__lang {
     display: flex;
@@ -106,13 +103,19 @@ body {
 }
 .header__lang-btn:hover {
     background: #CE71CB;
-    border-bottom: 1px solid white;
 }
-.header__lang-btn_active {
+.header__form-btn {
+    color: white;
+    width: 45px;
+    height: 45px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.header__form-btn:hover {
     background: #CE71CB;
-    border-bottom: 1px solid white;
 }
-
 .main {
     color: white;
     display: flex;
@@ -136,9 +139,19 @@ body {
     width: 70%;
     height: 55%;
     margin: 5%;
+    background-image: url("mkntsh420.jpeg");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .playlist__timeLine-btn {
     margin: 25px 0 0 0 ;
     width: 35px;
     height: 35px;
+}
+.popup {
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    display: flex;
 }
